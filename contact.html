@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Butlers After Dark, Arundel</title>
+  <meta name="description" content="Contact Butlers After Dark — a small wine and cocktail bar at 25B Tarrant Street, Arundel. Private hire, questions and hellos." />
+  <meta name="theme-color" content="#14100b" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ———————————————— Preloader ———————————————— -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-mark">B</span>
+      <span class="loader-rule"></span>
+      <span class="loader-word">Butlers <em>after dark</em></span>
+    </div>
+  </div>
+
+  <!-- ———————————————— Custom cursor ———————————————— -->
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor-dot"></span>
+    <span class="cursor-ring"></span>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ———————————————— Header ———————————————— -->
+  <header class="site-head" id="top">
+    <a class="brand magnetic" href="index.html" aria-label="Butlers After Dark, back to home">
+      <span class="brand-mark">B</span>
+      <span class="brand-words">
+        <span class="brand-name">Butlers</span>
+        <span class="brand-sub">after dark</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="magnetic" href="index.html#story">The Story</a>
+      <a class="magnetic" href="index.html#menu">The Bar</a>
+      <a class="magnetic" href="index.html#room">The Room</a>
+      <a class="magnetic" href="index.html#visit">Find Us</a>
+      <a class="magnetic is-here" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <p class="head-status"><span class="status-dot" id="statusDot"></span><span id="statusText">Open daily from midday</span></p>
+    <span class="head-progress" id="headProgress" aria-hidden="true"></span>
+  </header>
+
+  <main>
+
+    <!-- ———————————————— Contact ———————————————— -->
+    <section class="section contact" id="contact">
+      <div class="section-head reveal">
+        <p class="kicker">Contact</p>
+        <h2>
+          <span class="mask"><span class="ml" style="--i:0">Say hello,</span></span>
+          <span class="mask"><span class="ml" style="--i:1"><em>or just come in.</em></span></span>
+        </h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <dl class="spec">
+            <div class="spec-row"><dt>Find us</dt><dd>25B Tarrant Street, Arundel, West Sussex BN18 9DG</dd></div>
+            <div class="spec-row"><dt>Hours</dt><dd>Every day, midday until eleven</dd></div>
+            <div class="spec-row"><dt>Social</dt><dd><a class="text-link magnetic" href="https://www.facebook.com/profile.php?id=61577665263981" target="_blank" rel="noopener">Facebook</a></dd></div>
+            <div class="spec-row"><dt>Bookings</dt><dd>Walk-ins only, always</dd></div>
+            <div class="spec-row"><dt>Dogs</dt><dd>Welcome, expected, adored</dd></div>
+          </dl>
+          <p class="contact-note">For private hire, larger parties or anything out of the ordinary, drop us a note here and we will come back to you.</p>
+        </div>
+
+        <form class="contact-form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="form-hp"><label>Leave this empty <input name="bot-field" /></label></p>
+
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="f-subject">About</label>
+            <select id="f-subject" name="subject">
+              <option>A general hello</option>
+              <option>Private hire</option>
+              <option>A larger party</option>
+              <option>Press or partnerships</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" required></textarea>
+          </div>
+          <button class="btn magnetic" type="submit">Send the note</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ———————————————— Footer ———————————————— -->
+  <footer class="site-foot">
+    <p class="foot-water" data-speed="-0.12" aria-hidden="true">Butlers</p>
+    <p class="foot-word">Butlers <em>after dark</em></p>
+    <p class="foot-line">A familiar room, kept late.</p>
+    <div class="foot-meta">
+      <span>25B Tarrant Street, Arundel</span>
+      <span aria-hidden="true">·</span>
+      <span>A Momentsofarandel Ltd venture</span>
+      <span aria-hidden="true">·</span>
+      <span>© <span id="year">2026</span></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
