@@ -18,7 +18,6 @@
 
   --serif:   "Cormorant Garamond", "EB Garamond", Georgia, serif;
   --display: "Fraunces", "Cormorant Garamond", Georgia, serif;
-  --script:  "Italianno", "Cormorant Garamond", cursive;
   --sans:    "Jost", "Futura", "Century Gothic", sans-serif;
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -447,11 +446,14 @@ html.night .hero-glow {
 
 .hero-ad {
   display: block;
-  font-family: var(--script);
+  font-family: var(--display);
+  font-optical-sizing: auto;
+  font-style: italic;
   font-weight: 400;
-  font-size: clamp(2.6rem, 6.5vw, 5rem);
+  font-size: clamp(2rem, 4.8vw, 3.9rem);
   color: var(--brass);
-  margin-top: clamp(0.4rem, 1.2vw, 1rem);
+  letter-spacing: 0.02em;
+  margin-top: clamp(0.5rem, 1.4vw, 1.1rem);
   line-height: 1.1;
 }
 .hero-tag {
