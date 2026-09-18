@@ -1096,6 +1096,7 @@ html.night .hero-glow {
     white-space: normal;
     row-gap: 0.6rem;
     width: min(90%, 26rem);
+    margin-inline: auto;
   }
   .kicker { letter-spacing: 0.34em; }
   .menu-frame { padding-inline: 1.15rem; }
